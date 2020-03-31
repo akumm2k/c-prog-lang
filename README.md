@@ -3,7 +3,7 @@
 
 # Programming in C
 
-This repository hosts the materials for teaching the [Programming in C class](http://mff.devnull.cz/c-prog-lang/) at [MFF-UK](http://www.mff.cuni.cz) 
+This repository hosts the materials for teaching the [Programming in C class](http://mff.devnull.cz/c-prog-lang/) at [MFF-UK](http://www.mff.cuni.cz)
 
 See [lecture-notes](https://github.com/devnull-cz/c-prog-lang/tree/notes) for notes from individual classes in Markdown format and https://devnull-cz.github.io/c-prog-lang/notes.html for HTML format.
 
@@ -64,3 +64,8 @@ needed.
 
 You should never put notes into the input files unless really specific to a
 class, otherwise use modules and include those.
+
+
+## lecture notes
+
+current lecture notes in Markdown format
