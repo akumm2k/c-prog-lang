@@ -15,7 +15,7 @@ main(void)
 		 * what happens.  I.e.:
 		 */
 		//printf("%d\t%d\n", i, i * 2.54);
-		printf("%d\t%d\n", i, cm);
+		printf("%d\t%.2f\n", i, i * 2.54);
 		++i;
 	}
 }
