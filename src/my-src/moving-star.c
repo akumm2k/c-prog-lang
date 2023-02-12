@@ -59,6 +59,7 @@ int main(void) {
 }
 
 /**
+ * ! DON'T FUCKING LET IT STOP YOU FROM ASKING !
  * ? __SAME__ ?
  *  ? why are we printing to stderr ?
  */
