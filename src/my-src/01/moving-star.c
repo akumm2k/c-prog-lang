@@ -39,19 +39,19 @@ int main(void) {
     int i;
 
     while (1) {
-        fprintf(stdout, "|");
+        fprintf(stderr, "|");
         i = 0;
 
         for (int i = 0; i < width; i++) {
             if (i == pos)
-                fprintf(stdout, "*");
-            else fprintf(stdout, " ");
+                fprintf(stderr, "*");
+            else fprintf(stderr, " ");
         }
 
-        fprintf(stdout, "|");
+        fprintf(stderr, "|");
         fflush(stdout);
         poll(NULL, 0, 50);
-        fprintf(stdout, "\r");
+        fprintf(stderr, "\r");
         pos += dir;
 
         if (pos == width - 1 || pos == 0) dir = -dir;
@@ -62,4 +62,21 @@ int main(void) {
  * ! DON'T FUCKING LET IT STOP YOU FROM ASKING !
  * ? __SAME__ ?
  *  ? why are we printing to stderr ?
+ */
+
+
+/**
+ *
+ * * Notes
+ * - dynamic library
+ * - compilation: gcc -> asm (assembly code) -> as -> machine code (binary)
+ *
+ * - gcc -E foo.c > processed-foo.c
+ *      pre-processes foo.c - eg: includes all the libraries and rewrites macros
+ * - "%d" -> decimal int
+ * - Why is enclosing even a single line in braces important
+ *      ! When merging the code without braces, then one of the statements might fall outside the loop / block.
+ * - "%<x>" is called a conversion specifier
+ * * Read the specification on floats
+ *      1.12345678 -> %.
  */
